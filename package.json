@@ -1,0 +1,87 @@
+{
+  "name": "rasa-utter-hover",
+  "displayName": "Rasa Utter Hover",
+  "description": "Hover over utter_* references to instantly preview RASA response texts from your domain YAML files. Click to navigate to the definition.",
+  "version": "1.0.0",
+  "publisher": "DevRubio",
+  "author": {
+    "name": "Oscar Rubio"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.138.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "keywords": [
+    "rasa",
+    "chatbot",
+    "nlp",
+    "hover",
+    "utter",
+    "yaml",
+    "conversational-ai"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#5A17E6",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DevRubio/rasa-utter-hover"
+  },
+  "bugs": {
+    "url": "https://github.com/DevRubio/rasa-utter-hover/issues"
+  },
+  "homepage": "https://github.com/DevRubio/rasa-utter-hover#readme",
+  "activationEvents": [
+    "onLanguage:python",
+    "onLanguage:yaml",
+    "onLanguage:markdown",
+    "onLanguage:plaintext"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "rasa-utter-hover.goToDefinition",
+        "title": "Rasa: Go to Utter Definition"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "pnpm run compile-tests && pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "24.x",
+    "@types/vscode": "^1.138.0",
+    "@vscode/test-cli": "^0.0.15",
+    "@vscode/test-electron": "^3.0.0",
+    "eslint": "^10.5.0",
+    "ts-loader": "^9.6.2",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.61.1",
+    "webpack": "^5.107.2",
+    "webpack-cli": "^7.0.3"
+  },
+  "overrides": {
+    "diff": "^8.0.4",
+    "serialize-javascript": "^7.0.6"
+  },
+  "dependencies": {
+    "js-yaml": "^5.4.2"
+  }
+}
