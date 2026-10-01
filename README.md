@@ -2,18 +2,15 @@
 
 > Instantly preview RASA response texts by hovering over `utter_*` references in your code.
 
-![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/oscarrubio.rasa-utter-hover)
-![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/oscarrubio.rasa-utter-hover)
-![License](https://img.shields.io/github/license/YOUR_USERNAME/rasa-utter-hover)
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/DevRubio.rasa-utter-hover)
+![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/DevRubio.rasa-utter-hover)
+![License](https://img.shields.io/github/license/DevRubio/rasa-utter-hover)
 
 ## ✨ Features
 
 ### Hover Preview
 
 Hover over any `utter_*` identifier in your Python actions, YAML stories, or Markdown files to see its response text directly in the editor — no need to open the domain file.
-
-<!-- Replace with an actual screenshot/gif of your extension -->
-<!-- ![Hover Preview](images/hover-demo.gif) -->
 
 **Supported response properties:**
 
@@ -41,7 +38,7 @@ The extension automatically searches for responses in:
 
 ## 🚀 Getting Started
 
-1. Install the extension from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=oscarrubio.rasa-utter-hover).
+1. Install the extension from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=DevRubio.rasa-utter-hover).
 2. Open a RASA project in VS Code.
 3. Hover over any `utter_*` reference — done!
 
@@ -67,7 +64,7 @@ This extension works with zero configuration. No settings needed.
 
 ## 🐛 Known Issues
 
-- If responses are defined outside of `domain.yml` or `domain/**/*.yml`, they won't be detected. Open an [issue](https://github.com/YOUR_USERNAME/rasa-utter-hover/issues) if you need support for other paths.
+- If responses are defined outside of `domain.yml` or `domain/**/*.yml`, they won't be detected. Open an [issue](https://github.com/DevRubio/rasa-utter-hover/issues) if you need support for other paths.
 
 ## 📄 Release Notes
 
@@ -81,8 +78,8 @@ This extension works with zero configuration. No settings needed.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request on [GitHub](https://github.com/YOUR_USERNAME/rasa-utter-hover).
+Contributions are welcome! Please open an issue or submit a pull request on [GitHub](https://github.com/DevRubio/rasa-utter-hover).
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://github.com/DevRubio/rasa-utter-hover/blob/main/LICENSE).
